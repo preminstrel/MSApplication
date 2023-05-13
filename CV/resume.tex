@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{engord}
+\usepackage{fontawesome}
+\usepackage{bold-extra}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\LarGE}{\fontsize{15.5pt}{17pt}\selectfont}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\setlist{noitemsep} % removes spacing from items but leaves space around the whole list
+%\setlist{nosep} % removes all vertical spacing within and around the list
+\setlist[itemize]{topsep=0em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\LarGE
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\definecolor{link}{RGB}{42,85,200}
+\RequirePackage[
+	left=0.45in,
+	right=0.45in,
+	top=.4in,
+	bottom=0.4in,
+	nohead
+]{geometry}
+
+\begin{document}
+% \\ \hspace*{\fill} \\
+%----------HEADING----------
+\begin{center}
+    {\textbf{\huge HANSHI SUN}} \\ \vspace{8pt}
+    \small Southeast University, Nanjing, Jiangsu, China, 210096\\\vspace{3pt}
+    \small (+86) 15312872389 $|$
+    % \href{https://preminstrel.github.io}{\textcolor{blue}{\underline{preminstrel.github.io}}}$|$
+    \href{mailto:preminstrel@gmail.com}{preminstrel@gmail.com} $|$
+    \href{https://github.com/preminstrel}{\textcolor{link}{\underline{github.com/preminstrel}}} $|$
+    \href{https://preminstrel.com}{\textcolor{link}{\underline{preminstrel.com}}}
+    %\vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+{\bf Southeast University (SEU)} \hfill{\textbf{Nanjing, China}}\\
+\textit{Bachelor of Engineering in Electronic Science and Technology}\hfill{Sep 2019 - Jun 2023}\\
+\textbf{GPA}: 3.98/4.0 (Major: 4.0/4.0) $|$ \textbf{Average Score}: 94.04/100 $|$ \textbf{Ranking}: 1/20\\
+%\vspace{3pt}
+
+% {\bf University of Edinburgh} \hfill{\textbf{Edinburgh, UK}}\\
+% \textit{International Exchange Student, School of Informatics} (already admitted) \hfill{Jan 2023 - Jun 2023}\\
+%\textbf{\textbullet\} Already been admitted, leave for Edinburgh in Jan. 2023. 
+\vspace{-9pt}
+
+%-----------Publication-----------
+\section{\textbf{Publications}}
+\textbf{[1]} Jinan Bao, \underline{\textbf{Hanshi Sun}}, and Xingyu Li. ``Retina OCT Anomaly Detection and Localization via Structure-aware Knowledge Distillation.'' (In Submission)\\
+\vspace{3pt}
+
+\textbf{[2]} Yi Zhou, Lei Huang, Tao Zhou, \underline{\textbf{Hanshi Sun}}. ``Combating Medical Noisy Labels by Disentangled Distribution Learning and Consistency Regularization.'' \textit{Future Generation Computer Systems (FGCS)}, 2022.\\
+\vspace{3pt}
+
+\textbf{[3]} \underline{\textbf{Hanshi Sun}}, Ao Wang, Ninghao Pu, Zhiqing Li, Junguang Huang, Hao Liu, and Zhi Qi. ``Arrhythmia Classifier Using Convolutional Neural Network with Adaptive Loss-aware Multi-bit Networks Quantization.'' \textit{International Conference on Artificial Intelligence and Computer Engineering (ICAICE)}, 2021.\\
+\vspace{3pt}
+\vspace{-9pt}
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{\textbf{Research Experience}}
+{\bf Self-supervised Learning for Anomaly Detection} \hfill{\textbf{Edmonton, Canada}}\\
+
+\textit{Research Assitant, \href{https://www.mitacs.ca/en/programs/globalink/globalink-research-internship}{Mitacs GRI}, \href{https://www.ualberta.ca/index.html}{University of Alberta}, Supervisor: Prof. {\href{https://www.ece.ualberta.ca/~xingyu/index.html}{Xingyu Li}}} \hfill{Jun 2022 - Oct 2022}\\
+
+\textbf{Innovation}: Presented a hybrid architecture to integrate segmentation knowledge as privileged features for anomaly detection on Optical Coherence Tomography (OCT) images
+\begin{itemize}
+    \item Proposed a structure extraction module, which takes advantage of the nature of the image distribution and  copes the image with image processing methods to generate a structure-enhanced image
+    \item Incorporated privileged features distillation and reverse distillation methods with the help of extra structure extraction networks
+    \item Achieved competitive results compared to the state-of-art (SOTA) methods on three different retina OCT datasets  for both image-level and pixel-level on three different retina OCT datasets
+\end{itemize}
+\vspace{2pt}
+
+{\bf Multi-modal Multi-task Transformer for Retinal Disease Detection} \hfill{\textbf{Nanjing, China}}\\
+
+\textit{Research Assitant, {\href{http://palm.seu.edu.cn/members.html}{PAttern Learning and Mining (PALM) Lab}}, Supervisor: Prof. {\href{https://scholar.google.co.uk/citations?user=EnDCJKMAAAAJ&hl=en}{Yi Zhou}}}\hfill{Jan 2022 - Jun 2022}
+\\
+
+\textbf{Innovation}: Designed a multi-modal multi-task transformer (Ret-T) for retinal disease detection and classification\\
+\hspace{63pt} by combining self-attention and cross-attention mechanisms for multi-modal fusion
+\begin{itemize}
+    \item Introduced the cross-modal synthesis to compensate for restricted information from a single modality by generating other modalities to complement the missing but vital information
+    \item Realized a multi-modal multi-task transformer body with specific task heads, outperforming state-of-the-art classification methods by 2.4\% and detection methods by 7.1\%
+\end{itemize}
+\vspace{2pt}
+
+{\bf Disentangled Distribution Learning and Consistency Regularization} \hfill{\textbf{Nanjing, China}}\\
+\textit{Research Assitant, {\href{http://palm.seu.edu.cn/members.html}{PAttern Learning and Mining (PALM) Lab}}, Supervisor: Prof. {\href{https://scholar.google.co.uk/citations?user=EnDCJKMAAAAJ&hl=en}{Yi Zhou}}}\hfill{Oct 2021 - May 2022}\\
+
+\textbf{Innovation}: Proposed a hybrid hard-soft label learning mechanism and consistency regularization to enhance a\\
+\hspace{63pt} single model's disease detection capability instead of struggling with model ensembling
+\begin{itemize}
+    \item Integrated multiple reference models' predictions and disentangled them into a majority confident label vector and a description degree score vector for co-training the single-target model, mitigating the negative influence caused by label uncertainty and ambiguity
+    \item Introduced the inter- and intra-instance consistency regularization by constraining the target model to provide consistent predictions on images with similar medical findings
+    \item Conducted substantial experiments on the chest X-ray and fundus image datasets to validate the effectiveness
+    of the proposed disentangled distribution learning (DDL) and consistency regularization
+\end{itemize}
+\vspace{2pt}
+{\bf Energy-efficient DNN Algorithm for ECG Classification} \hfill{\textbf{Nanjing, China}}\\
+
+\textit{Research Assitant, {\href{https://electronic.seu.edu.cn/dz_en/11384/list.htm}{National ASIC Engineering Research Center}}, Supervisor: Prof. {\href{https://electronic.seu.edu.cn/lh/list.htm}{Hao Liu}}}\hfill{Dec 2020 - Sep 2021}\\
+
+
+\textbf{Innovation}: Acted as the leader of a seven-person team and developed an efficient arrhythmia detection algorithm\\
+\hspace{63pt} for deployment on resource-constrained devices to realize a real-time arrhythmia diagnosis
+\begin{itemize}
+    \item Designed a 17-class arrhythmia classifier based on convolutional neural network blocks
+    \item Proposed a hardware-friendly one-dimension adaptive loss-aware multi-bit networks quantization method to allocate different bitwidth for respective layers, balancing high performance (95.84\% accuracy) and low resource consumption (23.36$\times$ compression rate)
+    \item Published two papers, open-source code at \href{https://preminstrel.github.io/ECG-Classification/}{\faGithub \hspace{0em} \texttt{preminstrel/ECG-Classification}}
+\end{itemize}
+\vspace{-6pt}
+%-----------Professional Experience-----------
+\section{\textbf{Professional Experience}}
+{\bf Apple Inc.}  \hfill{\textbf{Shenzhen, China} }\\
+\textit{iPad System R\&D Intern, EE team}\hfill{Nov 2022 - Present}\\
+
+\begin{itemize}
+    \item Built a pure python automation test frame that can run on multiple units, collect and analyze logs
+    \item Issue reproduction, symptom capture, and hands-on debugging for coexistence testing
+    \item Created web pages with diverse visualization of the analyzed data using Flask
+\end{itemize}
+\vspace{-9pt}
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+{\bf Multi-task Learning Based Fundus Multi-disease Diagnosis}  \hfill{\textbf{Nanjing, China} }\\
+\textit{Degree Project, Supervisor: Prof. {\href{https://scholar.google.co.uk/citations?user=EnDCJKMAAAAJ&hl=en}{Yi Zhou}}}\hfill{Oct 2022 - Present}
+\begin{itemize}
+    \item Implemented a multi-task/multi-source domain transfer learning model, making the training of different tasks promote each other
+    \item Developed a pretrained model which can transfer knowledge efficiently without learning from scratch in the face of new downstream datasets
+\end{itemize}
+\vspace{2pt}
+{\bf High Precision 3D Simulation of Electron Beam Lithography}  \hfill{\textbf{Nanjing, China} }\\
+\textit{Project Leader, National-level Student Innovation and Entrepreneurship Project}\hfill{Dec 2020 - Aug 2021}
+\begin{itemize}
+    \item Developed a model of electron scattering in solids at low and high energies and simulated it using MATLAB
+    \item Made energy distribution maps compared with those in the literature to confirm the reliability of  the model and visualize three-dimensional etching patterns with Exposure
+    \item Optimized model parameters based on the Monte Carlo algorithm to minimize the proximity effect, achieving higher resolution and better simulation results
+\end{itemize}
+\vspace{-9pt}
+
+%-----------HONORS & AWARDS-----------
+\section{\textbf{Honors \& Awards}}
+\begin{itemize}
+    \item {\textbf{2022 China National Scholarship}} (the highest honor for undergraduates in China, \textbf{Top 0.1\%})
+    \item 2020\&2021\&2022 Single-course Scholarship, 18 times for three consecutive academic years (\textbf{Top 2\%})
+    \item 2020\&2021\&2022 Merit Student (Top 1\%) for three consecutive years
+    \item 2021 Alumni Scholarship (funded by notable alumni, \textbf{Top 1\%})
+    \item {\textbf{2021 China National Scholarship}} (the highest honor for undergraduates in China, \textbf{Top 0.1\%})
+    \item 2020 Exemplary Individual of Innovation and Entrepreneurship (\textbf{Top 1\%})
+    \item Excellent Student Model (\textbf{only two} in the department)
+    \item 2020 China Undergraduate Mathematics Competition (Provincial \textbf{\engordnumber{1} Prize}, National \textbf{\engordnumber{3} Prize})
+    \item 2020 Southeast University Summer Social Practice Outstanding Team (\textbf{\engordnumber{2} Place})
+    \item 17th Challenge Cup National Extra-curricular Academic Science and Technology Works (Provincial \textbf{\engordnumber{1} Prize})
+\end{itemize}
+\vspace{-9pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textbf{Skills \& Interests}}
+\textbf{Programming Languages}{: Python, C/C++, MATLAB, HTML, CSS, Bash, Verilog, Java, R, SQL, JavaScript} \\
+\textbf{Tools \& Frameworks}{: Git, LaTeX, Pytorch, TensorFlow, Flask, Bootstrap} \\
+\textbf{Platform}: Linux (Ubuntu, CentOS), macOS, Windows \\
+\textbf{Languages}: Mandarin (Native), English (Proficient), Japanese (Conversational, CJT-4) \\
+\textbf{Interests}{: Badminton, Swimming, Hiking}
+\vspace{-160pt}
+\end{document}
